@@ -55,5 +55,5 @@ while true; do
 	passwd $CHROOT_USER && break
 done
 
-sed -i 's/# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/g' sudoers
+sed -i 's/# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/g' /etc/sudoers
 printf "%s\n" "Don't forget to run \"archbox --mount\" in host on boot"
